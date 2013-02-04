@@ -15,18 +15,26 @@ stupid simple gravatar raw url reciever for statamic cms
 Get raw url. Example:
     
    	{{ gravatizzle:get_gravatar email='jake@imjakechapman.com' size='120' }}
+    
+    returns http://www.gravatar.com/avatar/80c432b19710638b2e8c758eb7a5d1e0?d=http://www.gravatar.com/avatar/00000000000000000000000000000000&s=120
 
 
 Get raw url for use in image tag. Example:
     
     <img src="{{ gravatizzle:get_gravatar email='jake@imjakechapman.com' size='120' }}" />
     
+    returns <img src="http://www.gravatar.com/avatar/80c432b19710638b2e8c758eb7a5d1e0?d=http://www.gravatar.com/avatar/00000000000000000000000000000000&s=120" />
+    
     
 Get SSL served raw url Example:
     
     {{ gravatizzle:get_secure_gravatar email='jake@imjakechapman.com' size='120' }}
     
+    returns https://secure.gravatar.com/avatar/80c432b19710638b2e8c758eb7a5d1e0?d=http://www.gravatar.com/avatar/00000000000000000000000000000000&s=120
+    
     
 Get SSL served raw url for use in image tag. Example:
     
     <img src="{{ gravatizzle:get_secure_gravatar email='jake@imjakechapman.com' size='120' }}" />
+    
+    returns <img src="htts://secure.gravatar.com/avatar/80c432b19710638b2e8c758eb7a5d1e0?d=http://www.gravatar.com/avatar/00000000000000000000000000000000&s=120" />
