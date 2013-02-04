@@ -13,7 +13,8 @@ stupid simple gravatar raw url reciever for statamic cms
 
 # Usage
 
-Set defaults for 'default icon' and 'size' ( do this in both functions get_gravatar & get_secure_gravatar )
+Set defaults for 'default icon' and 'size':
+
     $size = $this->fetch_param('size', 40);
     $default = "http://www.gravatar.com/avatar/00000000000000000000000000000000";
 
